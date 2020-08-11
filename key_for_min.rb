@@ -3,17 +3,12 @@
 
 def key_for_min_value(name_hash)
   j = 0 
-  min_value = nil
-  min_key = nil
-  name_hash.each do |min_value, min_key|
-    if j == 0 
-      min_key = key 
-      min_value = value
-    else 
-      min_value = value
-      min_key = key
+  name_hash.each do |key,value|
+    if lowest_value == 0 || value < lowest_value
+      lowest_value = value
+      lowest_key = key
     end
-    j += 1 
   end
-  min_key
+  lowest_key
+end
 end
