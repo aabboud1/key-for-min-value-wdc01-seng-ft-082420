@@ -3,5 +3,6 @@
 
 def key_for_min_value(name_hash)
   j = 0 
+  min_value = nil
   
 end
